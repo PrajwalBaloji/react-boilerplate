@@ -1,3 +1,7 @@
-import greet from './greet'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./style.css";
 
-console.log(greet);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
