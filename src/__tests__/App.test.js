@@ -10,4 +10,7 @@ describe("App", () => {
   it("Renders without error", () => {
     render(<App />);
   });
+  // it("fails", () => {
+  //   expect(true).toBe(false);
+  // });
 });

@@ -1,46 +1,32 @@
-{   
-    "parser" : "@babel/eslint-parser",
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "commonjs": true,
-        "node": true,
-        "es6": true,
-        "jest":true
-    },
-    "settings":{
-       "react": {
-        "version":"18.2.0"
-       }
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "overrides": [
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "indent": [
-            "error",
-            2
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
+{
+  "parser": "@babel/eslint-parser",
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "commonjs": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "version": "18.2.0"
     }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": ["react", "jsx-a11y"],
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"]
+  }
 }
